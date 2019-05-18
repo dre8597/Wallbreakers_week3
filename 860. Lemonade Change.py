@@ -43,9 +43,9 @@ from typing import List
 
 
 # Extremely unoptimized but works
+# This solution can handle any domination not just 5s, 10s and 20s
 def lemonadeChange(bills: List[int]) -> bool:
     change = collections.Counter()
-    change_needed = 0
     for i in bills:
         if i > 5:
             change_needed = i - 5
@@ -65,4 +65,4 @@ def lemonadeChange(bills: List[int]) -> bool:
     return True
 
 
-print(lemonadeChange([5, 5, 5, 5, 20, 20, 5, 5, 5, 5]))
+print(lemonadeChange([.50, 5, 1, 1, 1, 1, 1, 20, 5, 5, 5, 5, 20]))

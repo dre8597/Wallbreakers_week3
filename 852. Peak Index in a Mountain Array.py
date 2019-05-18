@@ -22,7 +22,7 @@ A is a mountain, as defined above.
 from typing import List
 
 
-# Not the correct solution but solves the problem
+# Returns the largest value of the list but doesn't check to ensure values next to it are less than it is
 def peakIndexInMountainArray(A: List[int]) -> int:
     print(max(A))
     return A.index(max(A))
